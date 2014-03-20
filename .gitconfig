@@ -3,6 +3,8 @@
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
 	# View the current working tree status using the short format
 	s = status -s
+	# Status
+	st = status
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
 	# `git di $number` shows the diff between the state `$number` revisions ago and the current state
@@ -13,6 +15,8 @@
 	c = clone --recursive
 	# Commit all changes
 	ca = !git add -A && git commit -av
+	# Commit
+	ci = commit
 	# Switch to a branch, creating it if necessary
 	go = checkout -B
 	# Show verbose output about tags, branches or remotes
