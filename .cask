@@ -19,7 +19,8 @@ installcask miro-video-converter
 # installcask opera
 # installcask opera-developer
 # installcask opera-next
-installcask spectacle
+installcask size-up
+# installcask spectacle
 installcask sublime-text
 installcask the-unarchiver
 installcask time-out
