@@ -17,6 +17,8 @@
 	ca = !git add -A && git commit -av
 	# Commit
 	ci = commit
+  # Checkout
+  co = checkout
 	# Switch to a branch, creating it if necessary
 	go = checkout -B
 	# Show verbose output about tags, branches or remotes
