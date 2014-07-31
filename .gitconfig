@@ -93,4 +93,7 @@
 	insteadOf = "gist:"
 
 [push]
-	default = matching
+	default = simple
+
+[branch]
+  autosetuprebase = always
