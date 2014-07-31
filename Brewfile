@@ -1,3 +1,6 @@
+# Install command-line tools using Homebrew
+# Usage: `brew bundle Brewfile`
+
 # Make sure we’re using the latest Homebrew
 update
 
@@ -9,10 +12,14 @@ upgrade
 install coreutils
 # Install some other useful utilities like `sponge`
 install moreutils
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+# Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed
 install findutils
+# Install GNU `sed`, overwriting the built-in `sed`
+install gnu-sed --default-names
 # Install Bash 4
+# Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`.
 install bash
+install bash-completion
 
 # Install wget with IRI support
 install wget --enable-iri
@@ -25,26 +32,31 @@ install narwhal
 # Install more recent versions of some OS X tools
 install vim --override-system-vi
 install homebrew/dupes/grep
-install josegonzalez/homebrew-php/php55
-
-# This formula didn’t work well last time I tried it:
-#install homebrew/dupes/screen
+install homebrew/dupes/screen
+install homebrew/php/php55 --with-gmp
 
 # Install other useful binaries
 install ack
-install pv
+install bfg
 #install exiv2
+install foremost
 install git
+install hashpump
 install imagemagick --with-webp
 install lynx
-install node
+install nmap
+install node # This installs `npm` too using the recommended installation method
+install p7zip
 install pigz
+install pv
 install rename
 install rhino
+install sqlmap
 install tree
+install ucspi-tcp # `tcpserver` et al.
 install webkit2png
+install xpdf
 install zopfli
-install p7zip
 
 install homebrew/versions/lua52
 
