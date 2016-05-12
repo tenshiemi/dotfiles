@@ -1,6 +1,4 @@
-Stripped down version of Mathias's dotfiles to just my current settings. To install first save the .bash_prompt file to your home directory and then copy the code from .bash_profile to source the file. Restart Terminal to view. If you want more robust dotfiles definitely check out the originals!
-
-# Mathias’s dotfiles
+Stripped down version of Mathias's dotfiles to just my current settings. To install first save the .bash_prompt file to your home directory and then copy the code from .bash_profile to your .bash_profile to source the .bash_prompt file. Restart Terminal to view. If you want more robust dotfiles definitely check out the originals!
 
 ## Author
 
